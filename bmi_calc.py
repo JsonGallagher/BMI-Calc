@@ -5,15 +5,15 @@ bmi = round((weight * 703) / (height * height), 1)
 
 if bmi < 16:
     print(f"Your BMI is {bmi} and is considered severely underweight.")
-elif bmi >= 16 and bmi <= 18.4:
+elif bmi < 18.5:
     print(f"Your BMI is {bmi} and is considered underweight.")
-elif bmi >= 18.5 and bmi <= 24.9:
+elif bmi < 25:
     print(f"Your BMI is {bmi} and is considered normal.")
-elif bmi >= 25 and bmi <= 29.9:
+elif bmi < 30:
     print(f"Your BMI is {bmi} and is considered overweight.")
-elif bmi >= 30 and bmi < 34.9:
+elif bmi < 35:
     print(f"Your BMI is {bmi} and is considered moderately obese.")
-elif bmi >= 35 and bmi < 39.9:
+elif bmi < 40:
     print(f"Your BMI is {bmi} and is considered severely obese.")
 else:
     print(f"Your BMI is {bmi} and is considered morbidly obese.")
